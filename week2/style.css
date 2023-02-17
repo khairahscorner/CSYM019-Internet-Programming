@@ -1,0 +1,20 @@
+body {
+    margin: 10% auto;
+    box-sizing: border-box;
+    display: flex;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.csym019, .csym015 {
+    width: 50%;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.csym019 {
+    background-color: #aed8e6;
+}
+.csym015 {
+    background-color: #feff00;
+}

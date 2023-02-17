@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding: 30px 10px;
+    color: white;
+    background-color: blue;
+}
+.header p {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.main {
+    display: flex;
+}
+.col1 {
+    width: 20%;
+    background-color: yellow;
+    padding: 10px;
+}
+.col1 ul {
+    padding: 0 0 0 20px;
+}
+.col2 {
+    width: 60%;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 0;
+}
+.col2 p {
+    margin-bottom: 20px;
+}
+.col3 {
+    width: 20%;
+    background-color: lightgreen;
+    padding: 10px 0;
+}
+.footer {
+    background-color: green;
+    color: white;
+}
