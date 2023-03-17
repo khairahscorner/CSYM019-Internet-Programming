@@ -30,15 +30,19 @@ function topIntervalFunc() {
   setInterval(shiftUp, 1000);
 }
 
+var timer = 0;
+
 function myKeyDownInterval(e) {
+  clearInterval(timer);
+
   if (e.keyCode == 37) {
-    leftIntervalFunc();
+    timer = setInterval(shiftLeft, 1000);
   } else if (e.keyCode == 38) {
-    topIntervalFunc();
+    timer = setInterval(shiftUp, 1000);
   } else if (e.keyCode == 39) {
-    setInterval(shiftRight, 1000);
+    timer = setInterval(shiftRight, 1000);
   } else if (e.keyCode == 40) {
-    setInterval(shiftDown, 1000);
+    timer = setInterval(shiftDown, 1000);
   }
 }
 
