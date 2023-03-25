@@ -1,0 +1,60 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "Sightings Report",
+    "description": "Reports of animal sightings",
+    "type": "object",
+    "properties": {
+        "sightings": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "animal": {
+                        "type": "string",
+                        "enum": [
+                            "Beaver",
+                            "Otter",
+                            "Hare",
+                            "Snowy Owl",
+                            "Pine Martin"
+                        ]
+                    },
+                    "number": {
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "location": {
+                        "type": "string"
+                    },
+                    "date": {
+                        "type": "string",
+                        "pattern": "([12][0-9]{3}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))"
+                    },
+                    "time": {
+                        "type": "string",
+                        "pattern": "^([0-1][0-9]|[2][0-3]):([0-5][0-9]):([0-5][0-9])$"
+                    },
+                    "observation": {
+                        "type": "string"
+                    },
+                    "observer": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string"
+                            },
+                            "email": {
+                                "type": "string",
+                                "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
